@@ -1,0 +1,143 @@
+:root {
+    --darkBlue: #1c71ad;
+    --lightBlue: #228ad4;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    height: 12vh;
+    box-shadow: 0 2px 2px #AAAAAA;
+}
+
+#logo {
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 3.6vw, 10rem);
+    background: linear-gradient(to right, var(--darkBlue), darkcyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#navMenu {
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: clamp(1rem, 1.8vw, 5rem);
+    padding: 0 1vw;
+    margin: 0 1vw;
+    cursor: pointer;
+}
+
+.navItem:not(#navItemCreate):hover::after, .navItem.active{
+    content: "";
+    background: var(--darkBlue);
+    width: 100%;
+    height: 5%;
+    left: 0;
+    top: 95%;
+    position: absolute;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+#navItemCreate {
+    height: 80%;
+    min-width: 5rem;
+    background: var(--darkBlue);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#navItemCreate:hover {
+    background: var(--lightBlue);
+    box-shadow: none;
+}
+
+#navToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#navToggle.active .buttonBar:nth-child(2) {
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+#navToggle.active .buttonBar:nth-child(1) {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(8px) rotate(-225deg);
+}
+
+#navToggle.active .buttonBar:nth-child(3) {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-8px) rotate(225deg);
+}
+
+.buttonBar {
+    width: 36px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--darkBlue);
+    margin: 3px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 425px) {
+    #navMenu.active {
+        position: absolute;
+        height: 50%;
+        left: 50%;
+        top: 12vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: white;
+        border: 1px solid #AAAAAA;
+        box-shadow: 0 2px 2px #AAAAAA;;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+    .navItem {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #navItemCreate {
+        border-radius: 0;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    #navToggle {
+        display: none;
+    }
+}

@@ -1,0 +1,85 @@
+:root {
+    --darkBlue: #1c71ad;
+    --lightBlue: #228ad4;
+    --darkRed: #bd1917;
+    --lightRed: #e02e2b;
+}
+
+.deckCreate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.addCardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84vw;
+    height: 18vh;
+    margin: 1vw;
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #AAAAAA;
+    border: dashed 0.5vw #AAAAAA;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    padding: 2vw;
+    margin: 1vw;
+    width: 80vw;
+    border: solid 0.1vw #AAAAAA;
+    border-radius: 1vw;
+    box-shadow: 0 2px 2px #AAAAAA;
+    background: white;
+}
+.wrapper h3 {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+}
+
+.wrapper h4 {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 400;
+    color: #121212;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.deckButton {
+    width: 5vw;
+    min-width: 3rem;
+    height: 5vw;
+    min-height: 3rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 3vw, 10rem);
+    color: white;
+    background: var(--darkBlue);
+    cursor: pointer;
+}
+
+.deckButton:hover {
+    background: var(--lightBlue);
+}
+
+#delete {
+    background: var(--darkRed);
+}
+
+#delete:hover {
+    background: var(--lightRed)
+}

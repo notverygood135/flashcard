@@ -1,0 +1,95 @@
+:root {
+    --darkBlue: #1c71ad;
+    --lightBlue: #228ad4;
+    --darkRed: #bd1917;
+    --lightRed: #e02e2b;
+}
+
+.deckList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 3vw;
+    z-index: -999;
+}
+
+.deck {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 80vw;
+    padding: 2vw;
+    margin: 1vw;
+    border: solid 0.1vw #AAAAAA;
+    border-radius: 1vw;
+    box-shadow: 0 2px 2px #AAAAAA;
+    background: white;
+}
+
+.wrapper h3 {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+}
+
+.wrapper h4 {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 400;
+    color: #121212;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.deckButton {
+    width: 5vw;
+    min-width: 3rem;
+    height: 5vw;
+    min-height: 3rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 3vw, 10rem);
+    color: white;
+    background: var(--darkBlue);
+    cursor: pointer;
+}
+
+.deckButton:hover {
+    background: var(--lightBlue);
+}
+
+#edit {
+    color: white;
+    height: clamp(2rem, 3vw, 10rem);
+}
+
+#edit:link {
+    text-decoration: none;
+}
+
+#edit:visited {
+    color: inherit;
+}
+
+#delete {
+    background: var(--darkRed);
+}
+
+#delete:hover {
+    background: var(--lightRed)
+}
+
+@media screen and (max-width: 767px) {
+    .deck {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .date {
+        display: none;
+    }    
+}
