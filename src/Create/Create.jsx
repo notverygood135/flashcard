@@ -105,25 +105,25 @@ export default function Create() {
         <section className={styles.deckCreate}>
             <form>
                 <input 
-                    type="text" 
-                    placeholder="Deck name" 
+                    type='text' 
+                    placeholder='Deck name' 
                     value={deckData.name} 
-                    name="name"
+                    name='name'
                     onChange={handleDeckDataChange}
                 />
             </form>
             <form>
                 <input 
-                    type="text" 
-                    placeholder="Description" 
+                    type='text' 
+                    placeholder='Description' 
                     value={deckData.description}
-                    name="description"
+                    name='description'
                     onChange={handleDeckDataChange}
                 />
             </form>
             {cardList.length > 0 ? cardList : <h3>There aren't any cards in this deck yet...</h3>}
             <button className={styles.addCardButton} onClick={addCard}>Add card</button>
-            <button type="submit" onClick={create}>Submit</button>
+            <button type='submit' onClick={create}>Submit</button>
         </section>
         </>
     )

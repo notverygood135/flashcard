@@ -22,7 +22,9 @@ export default function DeckItem(props) {
                     <button className={styles.deckButton}>
                         <NavLink id={styles.edit} to={`/decks/${props.id}`}><BiPencil /></NavLink>
                     </button>
-                    <button onClick={() => props.delete(props.id)} className={styles.deckButton} id={styles.delete}><BiTrash /></button>
+                    <button onClick={() => props.delete(props.id)} className={styles.deckButton} id={styles.delete}>
+                        <BiTrash />
+                    </button>
                 </div>
             </div>
         </>

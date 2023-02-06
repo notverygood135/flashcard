@@ -46,7 +46,7 @@ export default function Decks() {
     return (
         <>
         <section className={styles.deckList}>
-            {deckList.length ? deckList : "Waiting for something to happen?"}
+            {deckList.length ? deckList : 'Waiting for something to happen?'}
         </section>
         </>
     )

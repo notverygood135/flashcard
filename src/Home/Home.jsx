@@ -5,9 +5,9 @@ export default function Home() {
         <>
         <section>
             <h1>Find a deck</h1>
-            <form><input type="text" name="" id="1" /></form>
+            <form><input type='text' name='' id='1' /></form>
             <h1>or create your own</h1>
-            <NavLink to="/create">Create</NavLink>
+            <NavLink to='/create'>Create</NavLink>
         </section>
         </>
     )
