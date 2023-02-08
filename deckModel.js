@@ -1,10 +1,11 @@
-const { request } = require('express')
-const { Pool } = require('pg')
+require('dotenv').config()
+const { request } = require('express');
+const { Pool } = require('pg');
 const pool = new Pool({
-    user: 'postgres',
+    user: `${process.env.USER}`,
     host: 'localhost',
     database: 'flashcard',
-    password: 'root',
+    password: `${process.env.PASSWORD}`,
     port: 5432
 })
 
