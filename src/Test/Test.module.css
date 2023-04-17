@@ -1,0 +1,78 @@
+:root {
+    --darkBlue: #1c71ad;
+    --lightBlue: #228ad4;
+    --darkRed: #bd1917;
+    --lightRed: #e02e2b;
+}
+
+#testContainer {
+    height: 88vh;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testButtonWrapper {
+    height: 3rem;
+    width: 3rem;
+}
+
+.testButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--darkBlue);
+    color: white
+}
+
+.testButton:hover {
+    cursor: pointer;
+    background: var(--lightBlue);
+}
+
+#testCard {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px #AAAAAA;    
+}
+
+#testCard:hover {
+    cursor: pointer;
+}
+
+#testCard h1 {
+    font-size: 2rem;
+}
+
+#testCard h2 {
+    font-size: 1.5rem;
+}
+
+#cardQuestion {
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardExamples {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    padding-left: 3rem;
+    flex-direction: column;
+    justify-items: left;
+}

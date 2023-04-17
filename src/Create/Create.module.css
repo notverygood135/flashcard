@@ -83,3 +83,22 @@
 #delete:hover {
     background: var(--lightRed)
 }
+
+#submitButton {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-width: 5rem;
+    background: var(--darkBlue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#submitButton:hover {
+    background: var(--lightBlue);
+    cursor: pointer;
+}

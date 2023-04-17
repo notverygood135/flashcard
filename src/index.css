@@ -1,3 +1,7 @@
+html {
+    font-size: clamp(10px, 4vh, 50px);
+}
+
 :root {
     font-synthesis: none;
     text-rendering: optimizeLegibility;

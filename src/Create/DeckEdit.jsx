@@ -172,7 +172,7 @@ export default function DeckEdit() {
             </form>
             {cardList.length > 0 ? cardList : <h3>There aren't any cards in this deck yet...</h3>}
             <button className={styles.addCardButton} onClick={addCard}>Add card</button>
-            <button type="submit"  onClick={update}>Submit</button>
+            <button type="submit"  onClick={update} id={styles.submitButton}>Submit</button>
         </section>
         </>
     )

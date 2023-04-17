@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Create from './Create/Create';
 import Decks from './Decks/Decks';
 import DeckEdit from './Create/DeckEdit';
+import Test from './Test/Test';
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
                 <Route path="/decks" element={<Decks />} />
                 <Route path="/create" element={<Create />} />
                 <Route path={'/decks/:id'} exact element={<DeckEdit />} />
+                <Route path={'/test/:id'} exact element={<Test />} />
                 <Route component={Error} />
             </Routes>
         </div>
