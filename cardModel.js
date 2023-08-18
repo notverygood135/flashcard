@@ -1,6 +1,7 @@
 require('dotenv').config()
 const { request } = require('express')
 const { Pool } = require('pg')
+console.log(process.env);
 const pool = new Pool({
     user: `${process.env.USER}`,
     host: 'localhost',

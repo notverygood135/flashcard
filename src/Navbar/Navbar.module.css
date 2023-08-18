@@ -11,6 +11,7 @@
     height: 12vh;
     background: white;
     box-shadow: 0 2px 2px #AAAAAA;
+    z-index: 1;
 }
 
 #logo {
@@ -71,7 +72,7 @@ a:visited {
     min-width: 5rem;
     background: var(--darkBlue);
     color: white;
-    border-radius: 10px;
+    border-radius: 3rem;
     font-weight: 700;
 }
 
