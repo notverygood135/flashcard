@@ -18,6 +18,7 @@
     font-weight: 700;
     font-size: clamp(2rem, 3.6vw, 10rem);
     background: linear-gradient(to right, var(--darkBlue), darkcyan);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
